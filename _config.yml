@@ -69,7 +69,7 @@ theme: flexy
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: http://ugurozalp.github.io/
+  repo: https://github.com/ugurozalp/ugurozalp.github.io.git
   branch: master
   message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
 
