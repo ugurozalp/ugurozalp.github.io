@@ -1,83 +1,103 @@
-# Hexo Configuration
-## Docs: https://hexo.io/docs/configuration.html
-## Source: https://github.com/hexojs/hexo/
+# main text of home
+name: Uğur Özalp
+bio: A man wandering the world, photographing and encoding
 
-# Site
-title: Uğur Özalp
-subtitle: Frontend Engineer at GitLab.com
-description: Frontend Engineer at GitLab.com
-author: Uğur Özalp
-language: tr-TR
-timezone: Europe/Istanbul
+# twitter summary info
+description: A blog about java, codding and stuff related
 
-# URL
-## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://ugurozalp.gitlab.io/
-root: /
-permalink: :title/
-permalink_defaults:
+# if it's an external image, update below for true
+# better with square images
+external-image: false
+picture: assets/images/profile.jpg
 
-# Directory
-source_dir: source
-public_dir: public
-tag_dir: tags
-archive_dir: archives
-category_dir: categories
-code_dir: downloads/code
-i18n_dir: :lang
-skip_render:
+# If you want to include your resume, set to true
+# and specify source (external or local).
+resume: true
+resume-external: true
+resume-url: https://google.com/?q=my+resume
 
-# Writing
-new_post_name: :title.md # File name of new posts
-default_layout: post
-titlecase: false # Transform title into titlecase
-external_link: true # Open external links in new tab
-filename_case: 0
-render_drafts: false
-post_asset_folder: false
-relative_link: false
-future: true
-highlight:
-  enable: true
-  line_number: true
-  auto_detect: false
-  tab_replace:
+url: https://ugurozalp.github.io
+# your url: http://USERNAME.github.io
 
-# Category & Tag
-default_category: uncategorized
-category_map:
-tag_map:
+permalink: /:title/
 
-# Date / Time format
-## Hexo uses Moment.js to parse and display date
-## You can customize the date format as defined in
-## http://momentjs.com/docs/#/displaying/format/
-date_format: YYYY-MM-DD
-time_format: HH:mm:ss
+# To enable google analytics, supply your token below
+# analytics-google: 'UA-MYANALYTICS'
 
-# Pagination
-## Set per_page to 0 to disable pagination
-per_page: 50
-pagination_dir: page
+# To enable piwik tracking, supply your url & site ID below
+# analytics-piwik-url: 'piwik.my-host.com'
+# analytics-piwik-id: 1
 
-# Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
-theme: flexy
+# if you don't want comments in your posts, leave categories empty
+disqus:
+  shortname: ugurozalp # enter this from your disqus account
+  categories: [blog, project] # only show disqus for posts that have these categories
 
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: git
-  repo: https://github.com/ugurozalp/ugurozalp.github.io.git
-  branch: master
-  message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
+# if you don't have any of social below, comment the line
+facebook: ozalptigin
+twitter: Ugur_Ozalp
+# google: mygoogle
+# instagram: myinstagram
+# pinterest: mypinterest
+# linkedin: mylinkedin
+# youtube: myyoutube
+# spotify: myspotify
+github: ugurozalp
+# lastfm: mylastfm
+# stackoverflow: 7044681/mystackoverflow
+# quora: userquora
+# reddit: username
+medium: medium
+# vimeo: myvimeo
+email: alp.uguroz@gmail.com
 
-disqus_shortname: ugurozalp
+authors:
+    ugurozalp:
+        name: 
+        bio: A man wandering the world, photographing and encoding
+        external-image: false
+        picture: assets/images/profile.jpg
+        twitter: Ugur_Ozalp
 
-feed:
-  type: atom
-  path: atom.xml
-  limit: 0
-  hub:
-  content: 'true'
+# do you want a larger site? change the option below
+# options: [normal, large] | default: normal
+# normal = 560px / large = 810px
+width: normal
+
+# if you don't need pagination, comment the *paginate* configs below
+# paginate: 5
+# paginate_path: "blog/:num/"
+
+# if you don't need projects, comment the *projects* configs below
+projects: true
+
+# if you don't need "about" or "blog", comment them out below
+about: true
+blog: true
+
+# do you want to show the "read time" of the posts?
+read-time: true
+
+# do you want to show the "tags" inside the posts?
+show-tags: true
+
+# related posts inside a post?
+related: true
+
+# Display links for next and previous posts for the specified categories
+post-advance-links: [blog]
+
+# show author block at the end of a post ?
+show-author: true
+
+# do you want some animations?
+animation: true
+
+gems:
+  - jekyll-seo-tag
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+
+jekyll-mentions:
+    base_url: https://github.com

@@ -1,8 +1,4 @@
 .DS_Store
-node_modules
-public
-.deploy_git
-db.json
-_ghost_archive
-/themes/flexy/source/scripts/compiled.js
-/themes/flexy/layout/_videos.html
+_site
+.sass-cache
+Gemfile.lock
