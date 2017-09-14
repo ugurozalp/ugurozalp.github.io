@@ -1,23 +1,24 @@
 ---
-title: About
 layout: page
+title: About
 ---
 ![Profile Image]({{ site.url }}/{{ site.picture }})
+<center>{% include social-links.html %}</center>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>	 	</p>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Herkese Merhaba, </p>
 
+<p>Ben Uğur Özalp, 1990 yılında Manisa'da dünyaya geldim. İlköğretim ve liseyi Manisa'da tamamladıktan sonra Balıkesir Üniversitesi Bilgisayar ve Öğretim Teknolojileri bölümünden mezun oldum. 2013 yılından beri java ve telephony teknolojileri üzerine yazılım geliştirmekteyim.</p>
+
+<p>Burada öğrenmekte olduğum konularla birlikte Java SE ve Java EE konularında paylaşımlarda bulunmaya çalışacağım.</p>
+
+<p>Her türlü soru, görüş ve önerilerinizi iletişim adreslerim üzerinden benimle paylaşabilirsiniz.</p>
+
+<p>Hoşçakalın :)</p>
+
+
+<!--
 <h2>Skills</h2>
 
 <ul class="skill-list">
@@ -44,3 +45,6 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	<li><a href="https://github.com/">Ipsum Dolor</a></li>
 	<li><a href="https://github.com/">Dolor Lorem</a></li>
 </ul>
+-->
+{% include disqus.html %}
+

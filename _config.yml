@@ -1,6 +1,6 @@
 # main text of home
 name: Uğur Özalp
-bio: A man wandering the world, photographing and encoding
+bio: A man traveling the world, photographing and encoding
 
 # twitter summary info
 description: A blog about java, codding and stuff related
@@ -34,30 +34,32 @@ disqus:
   categories: [blog, project] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-facebook: ozalptigin
-twitter: Ugur_Ozalp
+
+twitter: ugurozalp_
 # google: mygoogle
-# instagram: myinstagram
 # pinterest: mypinterest
-# linkedin: mylinkedin
+linkedin: ozalpugur
 # youtube: myyoutube
 # spotify: myspotify
 github: ugurozalp
+gitlab: ugurozalp
+email: alp.uguroz@gmail.com
 # lastfm: mylastfm
 # stackoverflow: 7044681/mystackoverflow
 # quora: userquora
 # reddit: username
-medium: medium
+# medium: medium
 # vimeo: myvimeo
-email: alp.uguroz@gmail.com
+instagram: ugurozalp_
+facebook: ugurozalpp
 
 authors:
-    ugurozalp:
-        name: 
+    ugurozalp: 
+        name: Uğur Özalp
         bio: A man wandering the world, photographing and encoding
         external-image: false
         picture: assets/images/profile.jpg
-        twitter: Ugur_Ozalp
+        twitter: ugurozalp_
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
