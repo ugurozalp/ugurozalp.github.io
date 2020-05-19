@@ -213,5 +213,8 @@ Kod çıktısı:
 TeaCup{accessory='tea plate', capacity=100.0, material='glass', type='TeaCup'}
 TeaCup{accessory='handle', capacity=100.0, material='glass', type='TeaCup'}
 ```
+ Bu makaledeki kodu [GitHub](https://github.com/ugurozalp/DesignPatterns/tree/master/src/com/ugurozalp/designpatterns/creational/prototype) sayfamda bulabilirsiniz.
+
+[<< Design Patterns](/designpatterns/)
 
 {% include disqus.html %}

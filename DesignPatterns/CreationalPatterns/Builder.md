@@ -29,4 +29,8 @@ description: An article where you can find the basic form of builder pattern
     3. Nesnemizi oluşturduktan sonra değişmesini istemiyorsak (immutable);
     4. Constructorlarımız duplicate olmaya başladı ise.
     
-    {% include disqus.html %}
+ Bu makaledeki kodu [GitHub](https://github.com/ugurozalp/DesignPatterns/tree/master/src/com/ugurozalp/designpatterns/creational/builder) sayfamda bulabilirsiniz.
+
+[<< Design Patterns](/designpatterns/)
+
+{% include disqus.html %}

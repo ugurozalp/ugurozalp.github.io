@@ -70,6 +70,8 @@ description: An article where you can find the basic form of singleton pattern
 
     }
     ```
+    
+    Bu makaledeki kodu [GitHub](https://github.com/ugurozalp/DesignPatterns/tree/master/src/com/ugurozalp/designpatterns/creational/singleton) sayfamda bulabilirsiniz.
 
 - **Tavsiyeler;**
     - Java Concurrency in Practice —> [https://www.amazon.com/Java-Concurrency-Practice-Brian-Goetz/dp/0321349601](https://www.amazon.com/Java-Concurrency-Practice-Brian-Goetz/dp/0321349601)
@@ -79,7 +81,7 @@ description: An article where you can find the basic form of singleton pattern
     - Gökhan Topçu - Programlama Dilleri ve Performans sunumunu izlemenizi tavsiye ederim. [https://www.youtube.com/watch?v=iw-FkRNa2Uk](https://www.youtube.com/watch?v=iw-FkRNa2Uk)
 
 
-    [<<Design Patterns](/my-first-blog/)
+    [<< Design Patterns](/designpatterns/)
 
     {% include disqus.html %}
 
