@@ -9,9 +9,9 @@ title: About
 
 <p>Herkese Merhaba, </p>
 
-<p>Ben Uğur Özalp, 1990 yılında Manisa'da dünyaya geldim. İlköğretim ve liseyi Manisa'da tamamladıktan sonra Balıkesir Üniversitesi Bilgisayar ve Öğretim Teknolojileri bölümünden mezun oldum. 2013 yılından beri java ve telephony teknolojileri üzerine yazılım geliştirmekteyim.</p>
+<p>Ben Uğur, 2013 yılından beri java ve telephony teknolojileri üzerine yazılım geliştirmekteyim.</p>
 
-<p>Burada öğrenmekte olduğum konularla birlikte Java SE ve Java EE konularında paylaşımlarda bulunmaya çalışacağım.</p>
+<p>Burada kendi notlarımdan oluşan yazılar paylaşacağım. Öncelikli hedefim bahsettiğim konuları sade bir biçimde ele alıp en temel özellikleri verebilmek ve derinlemesine araştırma yapmak isteyenlere de ilgili anahtar kelimelerle yardımcı olmak.</p>
 
 <p>Her türlü soru, görüş ve önerilerinizi iletişim adreslerim üzerinden benimle paylaşabilirsiniz.</p>
 
