@@ -1,4 +1,4 @@
-<nav class="{% if page.title == "Home" %}nav-home{% else %}nav{% endif %}">
+<nav class="{% if page.title == "Home" or page.title == "Blog" %}nav-home{% else %}nav{% endif %}">
     <ul class="list">
         {% if page.title != "Home" %}
             <li class="item">
@@ -14,13 +14,13 @@
             {% endif %}
         {% endif %}
 
-        {% if site.projects == true %}
+        <!-- {% if site.projects == true %}
             {% if page.title != "Projects" %}
                 <li class="item">
                     <a class="link" href="{{ site.url }}/projects">Projects</a>
                 </li>
             {% endif %}
-        {% endif %}
+        {% endif %} -->
 
         {% if site.about == true %}
             {% if page.title != "About" %}
@@ -30,10 +30,10 @@
             {% endif %}
         {% endif %}
 
-        {% if site.resume == true %}
+        <!-- {% if site.resume == true %}
             <li class="item">
                 <a class="link" href="{% if site.resume-external %}{{ site.resume-url }}{% else %}{{ site.url }}/{{ site.resume-url }}{% endif %}">Resume</a>
             </li>
-        {% endif %}
+        {% endif %} -->
     </ul>
 </nav>
