@@ -1,9 +1,13 @@
-require 'html/proofer'
+# require 'html/proofer'
 
-# rake test
-desc "build and test website"
+# # rake test
+# desc "build and test website"
 
-task :test do
-  sh "bundle exec jekyll build"
-  HTML::Proofer.new("_site", {:href_ignore=> ['http://localhost:4000'], :verbose => true}).run
-end
+# task :test do
+#   sh "bundle exec jekyll build"
+#   HTML::Proofer.new("_site", {:href_ignore=> ['http://localhost:4000'], :verbose => true}).run
+# end
+#!/usr/bin/env ruby
+
+require 'html-proofer'
+HTMLProofer.check_directory("./_site").run
