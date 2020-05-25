@@ -1,29 +1,32 @@
 ---
-layout: "page"
+layout: post
 title: Prototype
 tag:
 - designpatterns
 - creationalpatterns
 - prototype
 category: designpatterns creationalpatterns
-authot: ugurozalp
+author: ugurozalp
 description: An article where you can find the basic form of prototype pattern
+lang: tr
+cat: designpatterns-creationalpatterns-prototype
+permalink: "designpatterns/creationalpatterns/prototype"
 ---
-# Prototype
-
+ [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 - **Prototype nedir?**
+    
     "prototip", "asıl örnek" anlamına geliyor.
-
 - **Amaç:**
     - Yeniden oluşturulması zaman alan nesneyi klonlamak/kopyalamak.
     - Sınıf karmaşıklığını ve kullanılan sınıf sayısını azaltmak.
+ 
 - **Çözüm:**
     - Klonlanacak prototip nesneyi oluşturmak.
         1. implements Cloneable
         2. +clone()
         3. Setter
+ 
 - **Ek bilgiler:**
-
     Prototype yerine Abstract Factory ya da Factory Method kalıpları kullanabilirdi. Aralarındaki fark Factory kalıtım kullanırken(bu her yeni nesne için bir factory nesnesi gerekmesi anlamına gelir), Prototype ise var olan prototip nesnesinden türetilir.
 
 - **İlişkili Tasarım Kalıpları;**

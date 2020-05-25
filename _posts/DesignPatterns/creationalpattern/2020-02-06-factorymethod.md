@@ -8,9 +8,10 @@ tag:
 category: designpatterns creationalpatterns
 authot: ugurozalp
 description: An article where you can find the basic form of factory method pattern
+lang: tr
+cat: designpatterns-creationalpatterns-factorymethod
+permalink: "designpatterns/creationalpatterns/factorymethod"
 ---
-# Factory Method
-
 - **Amaç:**
 
     En basit haliyle, nesnelerin üretilme işlemini bir merkezi bir hale getirmek.
@@ -26,4 +27,6 @@ description: An article where you can find the basic form of factory method patt
     Esnekliğin önemli olduğu zamanlarda
     Sınıfların ortak bir ataları olduğu zamanlarda kullanılarak bizi karmaşıklıktan kurtarır
     
-    {% include disqus.html %}
+[<< Design Patterns](/designpatterns/)
+    
+{% include disqus.html %}

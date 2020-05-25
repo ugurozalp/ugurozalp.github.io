@@ -1,6 +1,7 @@
 ---
 title: "Singleton"
 layout: post
+lang: tr
 date: 2020-05-05 22:48
 headerImage: false
 tag:
@@ -8,9 +9,12 @@ tag:
 - creationalpatterns
 - singleton
 category: designpatterns creationalpatterns
-authot: ugurozalp
+author: ugurozalp
 description: An article where you can find the basic form of singleton pattern
+cat: designpatterns-creationalpatterns-singleton
+permalink: "designpatterns/creationalpatterns/singleton"
 ---
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 - **Singleton?**
 
     "tek", "tek olan" anlamına gelir
@@ -20,7 +24,7 @@ description: An article where you can find the basic form of singleton pattern
     Bir sınıfın sadece bir tane nesnesi olduğuna emin ol ve erişebilir bir erişim noktası sağla.
 
 - **Çözüm:**
-    1. Nesne yaratmayı kontrol ederek.
+    1. Nesne yaratmayı kontrol et.
 
         ~~Object obj = new Object();~~
 
@@ -28,8 +32,8 @@ description: An article where you can find the basic form of singleton pattern
 
 - **Happens-before Relationship nedir?**
 
-    Bu konu çok uzun ve detaylı olduğundan konuyu kısaca açıklamaya çalıştıktan sonra vereceğim anahtar kelimeler ile konunun detaylarını araştırabileceksiniz. 
-    Günümüz bilgisayarları da dahil olmak üzere **Von Neuman** mimarisi kullanılmakta. Bu yapı basit anlamda tek seferde tek işlem yapma olarak ele alırsak, mimari kaynaklı kısıtlamaları aşmak hem de artan yüksek ihtiyaca cevap veremebilmek için donanım seviyesinde çekirdek sayılarını artmasına, iç  yapılarında pipelining ve branch prediction tekniklerininin gelişmesine sebep oldu. Yazılım seviyesinde işletim sistemleri, JVM gibi yapılar çeşitli **optimizasyonlar** yapmak durumunda kaldılar. Happens-before ilişkisi de yukarıdaki sistemlerin inisiyatif alarak yapacakları optimizasyonları önlemeyi sağlar. 
+    Bu konu detaylı olduğundan kısaca açıklamaya çalıştıktan sonra vereceğim anahtar kelimeler ile konunun detaylarını araştırabilirsiniz.
+    Bilgisayar mimarisinden (`Von Neumann`, `Harvard`) kaynaklanan kısıtlamaları aşmak hem de artan yüksek ihtiyaca cevap verebilmek için yazılım seviyesinde, işletim sistemleri, JVM gibi yapılar çeşitli **optimizasyonlar** yapmak durumunda kaldılar. Happens-before ilişkisi de yukarıdaki sistemlerin inisiyatif alarak yapacakları optimizasyonları önlemeyi amaçlamaktadır. 
 
     - synchronized
 

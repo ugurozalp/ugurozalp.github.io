@@ -5,17 +5,19 @@ title: About
 ![Profile Image]({{ site.url }}/{{ site.picture }})
 <center>{% include social-links.html %}</center>
 
+{% include nav-en.html %}
+
 <p>	 	</p>
 
-<p>Herkese Merhaba, </p>
+<p>Hello everyone, </p>
 
-<p>Ben Uğur, 2013 yılından beri java ve telephony teknolojileri üzerine yazılım geliştirmekteyim.</p>
+<p>I'm Uğur, I have been developing software on java and telephony technologies since 2013.</p>
 
-<p>Burada kendi notlarımdan oluşan yazılar paylaşacağım. Öncelikli hedefim bahsettiğim konuları sade bir biçimde ele alıp en temel özellikleri verebilmek ve derinlemesine araştırma yapmak isteyenlere de ilgili anahtar kelimelerle yardımcı olmak.</p>
+<p>I will share my own notes here. My primary goal is to be able to deal with the topics I mentioned in a simple way, to give the most basic features and to help those who want to do in-depth research with related keywords.</p>
 
-<p>Her türlü soru, görüş ve önerilerinizi iletişim adreslerim üzerinden benimle paylaşabilirsiniz.</p>
+<p>You can share all your questions, opinions and suggestions with me through my contact addresses.</p>
 
-<p>Hoşçakalın :)</p>
+<p>stay healthy, goodbye :)</p>
 
 
 <!--
