@@ -3,10 +3,14 @@
 # https://jekyllrb.com/docs/pagination/
 layout: page
 title: Blog
+pagination:
+  enabled: true
 ---
-<div class="page tags">
+
+{% include nav-en.html %}
+
+<div class="mar-eksi page tags">
 <section class="list">
-    <h3 class="title">Etiketler</h3>
 
     {% assign tags_list = site.tags %}
 
@@ -26,24 +30,51 @@ title: Blog
 <section class="list">
 	{% if site.posts.size == 0 %}
 		<p class="text-center">Nothing published yet!</p>
-	{% elsif site.paginate %}
+	{% elsif site.pagination.enabled %}
 		{% for post in paginator.posts %}
 			{% if post.category == 'blog' %}
 				{% if post.hidden != true %}
-					
 					{% include blog-post.html %}
 				{% endif %}
 			{% endif %}
 		{% endfor %}
-
 		{% include pagination.html%}
 	{% else %}
-		{% for post in site.posts %}
-			{% if post.category == 'blog' %}
-				{% if post.hidden != true %}
-					{% include blog-post.html %}
-				{% endif %}
-			{% endif %}
-		{% endfor %}
+	<table width=100% >
+		<tr>
+			<th>English Contents</th>
+			<th></th>
+			<th>Türkçe İçerikler</th>
+		</tr>
+		<tr>
+			<td width=50%>
+				<table width=100% >
+					{% for post in site.posts %}
+            			{% if post.category == 'blog' %}
+                			{% if post.hidden != true %}
+                				{% if post.lang == 'en' %}
+                				<tr><td>{% include blog-post.html %}</td></tr>
+                				{% endif %}
+                			{% endif %}
+            			{% endif %}
+        			{% endfor %}
+				</table>
+			</td>
+			<th style="background-color: #d2d2d2;border: 10px solid;color: white;"></th>
+			<td>
+				<table width=100% >
+					{% for post in site.posts %}
+            			{% if post.category == 'blog' %}
+                			{% if post.hidden != true %}
+                				{% if post.lang == 'tr' %}
+                				<tr><td>{% include blog-post.html %}</td></tr>
+                				{% endif %}
+                			{% endif %}
+            			{% endif %}
+        			{% endfor %}
+				</table>
+			</td>
+		</tr>
+	</table>
 	{% endif %}
 </section>
