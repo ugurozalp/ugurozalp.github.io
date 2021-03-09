@@ -196,7 +196,6 @@ export default {
 };
 </script>
 ```
-
 Projeyi çalıştırdığımda sayfada ikonları görebiliyorum.
 
 ![/assets/images/svg/publish3.png](/assets/images/svg/publish3.png)
