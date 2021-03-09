@@ -201,6 +201,6 @@ Projeyi çalıştırdığımda sayfada ikonları görebiliyorum.
 
 ![/assets/images/svg/publish3.png](/assets/images/svg/publish3.png)
 
-Okuduğunuz için teşekkür ederim, umarım yardımcı olmuştur. Yazıya ait kaynak kodları github adresimde bulabilirsiniz. Neşeli, sağlıklı günler dilerim 🙂
+Okuduğunuz için teşekkür ederim, umarım yardımcı olmuştur. Yazıya ait kaynak kodları github adresimde bulabilirsiniz. Neşeli, sağlıklı günler dilerim. 🙂
 
 GitHub: [https://github.com/ugurozalp/training-vue](https://github.com/ugurozalp/training-vue)
