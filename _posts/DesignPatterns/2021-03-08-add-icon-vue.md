@@ -88,7 +88,7 @@ Artık elimizde bir component olduğu için yukarıdaki örnekleri istediğimiz 
 </button>
 ```
 
-# İkonlarını vuetify ile kullanmak
+# İkonları vuetify'a entegre etmek
 
 Vuetify oldukça zengin kullanıcı deneyimleri oluşturmak için ihtiyaç duyulan birçok araç sağlayan bir material design framework'tür. Eğer projenizde kullanmıyorsanız vuetify kullanımızı öneririm. Böylece aşağıda anlatacağım kısımları da bakmak durumunda kalabilirsiniz 🙂
 
@@ -122,6 +122,85 @@ daha kısa yazım için:
 <v-icon>$customIconGlobal</v-icon>
 ```
 
-Okuduğunuz için teşekkür ederim, umarım yardımcı olmuştur. yazıya ait kaynak kodları github adresimde bulabilirsiniz.
+Bir diğer yöntem ise vue-svg-loader paketini kullanmak. Bu paket ile svg dosyalarınızı tıpkı bir component gibi kullanabilirsiniz. Aslında yazının ilk kısmında yaptığımız CustomIconGlobe.vue gibi dosyalar oluşturmadan doğrudan svg dosyalarını kullanmanızı sağlıyor. Daha fazla bilgi için sitesini ziyaret edebilirsiniz.[vue-svg-loader Documentation](https://vue-svg-loader.js.org/)
 
-[https://github.com/ugurozalp/training-vue](https://github.com/ugurozalp/training-vue)
+Öncelikle 2 paketi yüklüyorum.
+
+```bash
+npm install -D vue-svg-loader vue-template-compiler
+```
+
+Şimdi ilgili konfigürasyonları yapmamız gerekiyor. vue-svg-loader paketi bize webpack, VUE CLI ve Nuxt.js için gerekli konfigurasyonu sağlıyor. Ben projemde VUE CLI ile devam edeceğim. VUE CLI varsayılan olarak vue.config.js dosyasının kullanır. Şimdi projemizin root dizininde vue.config.js dosyasını oluşturup, içerisine aşağıdaki konfigürasyonu ekleyelim.
+
+vue.config.js
+
+```jsx
+module.exports = {
+  chainWebpack: (config) => {
+    const svgRule = config.module.rule('svg');
+
+    svgRule.uses.clear();
+
+    svgRule
+      .use('babel-loader')
+      .loader('babel-loader')
+      .end()
+      .use('vue-svg-loader')
+      .loader('vue-svg-loader');
+  },
+};
+```
+
+Şimdi de icons/globe.svg dosyasını oluşturuyorum. svg içeriğini CustomIconGlobe.vue içerisinden kopyalıyorum.
+
+![/assets/images/svg/Screen_Shot_2021-03-09_at_11.20.05.png](/assets/images/svg/Screen_Shot_2021-03-09_at_11.20.05.png)
+
+globe.svg
+
+```html
+<svg width="18" height="18" viewBox="0 0 18 18">
+    <path
+            d="M9 1a8 8 0 100 16A8 8 0 009 1zM8 15.32a6.4 6.4 0 01-5.23-7.75L7 11.68v.8c0 .88.12 1.32 1 1.32v1.52zm5.72-2c-.2-.66-1-1.32-1.72-1.32h-1v-2c0-.44-.56-1-1-1H6V7h1c.44 0 1-.56 1-1V5h2c.88 0 1.4-.72 1.4-1.6v-.33a6.4 6.4 0 012.32 10.24v.01z"
+    />
+</svg>
+```
+
+Artık svg dosyasını bir component gibi kullanabilirim.
+
+```jsx
+<template>
+  <div>
+    <button @click="printHello">
+      <custom-icon width="50" height="50"></custom-icon>
+    </button>
+    <v-icon>$vuetify.icons.customIconGlobal</v-icon>
+    <v-icon>$customIconGlobal</v-icon>
+    <globe-icon></globe-icon>
+  </div>
+</template>
+<script>
+import CustomIcon from "@/icons/CustomIconGlobe.vue";
+import GlobeIcon from "@/icons/globe.svg";
+
+export default {
+  name: "UseOfIcons",
+  components: {
+    CustomIcon,
+    GlobeIcon
+  },
+  methods: {
+    printHello() {
+      console.log("Hello!");
+    }
+  }
+};
+</script>
+```
+
+Projeyi çalıştırdığımda sayfada ikonları görebiliyorum.
+
+![/assets/images/svg/publish3.png](/assets/images/svg/publish3.png)
+
+Okuduğunuz için teşekkür ederim, umarım yardımcı olmuştur. Yazıya ait kaynak kodları github adresimde bulabilirsiniz. Neşeli, sağlıklı günler dilerim 🙂
+
+GitHub: [https://github.com/ugurozalp/training-vue](https://github.com/ugurozalp/training-vue)
