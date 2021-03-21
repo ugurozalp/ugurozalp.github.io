@@ -1,5 +1,5 @@
 ---
-title: "Vue projeme nasıl ikon(svg) eklerim?"
+title: "Vue.js ikon(svg) Ekleme"
 lang: tr
 layout: post
 headerImage: false
@@ -13,7 +13,7 @@ description: Vue projenize icon(svg) dosyalarını nasıl ekleriz konusundan bah
 Created: May 08, 2021 11:48 PM
 Status: In Review 👀
 Type: Technical Spec
-# Vue projenize İkon(svg) eklemek
+# Vue.js projenize ikon(svg) eklemek
 
 Herkese Merhaba,
 
