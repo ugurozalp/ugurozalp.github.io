@@ -140,7 +140,7 @@ Markdown can also contain images. I'll need to add something here sometime.
 *Bigger Images*?
 
 {% highlight raw %}
-![Markdowm Image][/image/url]{: class="bigger-image" }
+![Markdowm Image][/image/url]{: class="smaller-image" }
 {% endhighlight %}
 
 ![Markdowm Image][5]{: class="bigger-image" }
