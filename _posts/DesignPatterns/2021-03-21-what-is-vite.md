@@ -2,7 +2,7 @@
 title: "Vite Nedir?"
 lang: tr
 layout: post
-headerImage: false
+headerImage: yes
 tag:
 - vuejs
 category: blog
@@ -10,11 +10,11 @@ author: ugurozalp
 cat: what-is-vite
 description: Vue topluluğu tarafından geliştirilen bir inşa aracı (build tool) olan Vite projesinden bahsedeceğim.
 ---
-Created: May 21, 2021 20:48 PM
-Status: In Review 👀
-Type: Technical Spec
-# Vite Nedir?
+<p align="center">
+  <img width="460" height="300" src="https://vitejs.dev/logo.svg">
+</p>
 
+# Vite Nedir?
 Herkese merhaba, bu yazımda Vue topluluğu tarafından geliştirilen bir inşa aracı (build tool) olan Vite projesinden bahsedeceğim. 
 
 Vite kısaca; (projelerimin çoğunda kullandığım) webpack, rollup ve parcel gibi, kod geliştirirken yapılan her değişiklikte projenin ihtiyaç duyduğu paket/paketleri oluşturan ve derleyen bir araçtır. Peki halihazırda kullandığımız birçok araç varken neden yeni bir araç daha geliştiriliyor diye soracak olursanız, geliştirici ekibin ana motivasyonunun özellikle büyük ölçekli projelerde ortaya çıkan performans sorunlarına çözüm üretmek olduğunu söyleyebilirim. kaynak: [https://vitejs.dev/guide/why.html](https://vitejs.dev/guide/why.html)

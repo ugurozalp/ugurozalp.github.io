@@ -9,6 +9,7 @@ tag:
 category: blog
 author: ugurozalp
 cat: designpatterns
+description: The content page where you can access all of the articles on design patterns.
 ---
 Created: May 12, 2020 6:41 PM
 Status: In Review 👀

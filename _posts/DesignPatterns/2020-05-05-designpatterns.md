@@ -9,7 +9,7 @@ tag:
 category: blog
 author: ugurozalp
 cat: designpatterns
-description: An article where you can find the basic form of prototype pattern
+description: Tasarım kalıplarını ele aldığım makalelerin tamamına ulaşabileceğiniz içerik sayfası.
 ---
 Created: May 12, 2020 6:41 PM
 Status: In Review 👀
