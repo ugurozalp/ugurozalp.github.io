@@ -1,6 +1,6 @@
 # main text of home
 name: Uğur Özalp
-bio: A man traveling the world, photographing and encoding
+bio: A man traveling the world (not now because I'm staying at home), photographing and encoding
 
 # twitter summary info
 description: A blog about java, codding and stuff related
@@ -57,7 +57,7 @@ facebook: ugurozalpp
 authors:
     ugurozalp: 
         name: Uğur Özalp
-        bio: A man wandering the world, photographing and encoding
+        bio: A man traveling the world (not now because I'm staying at home), photographing and encoding
         external-image: false
         picture: assets/images/profile.jpg
         twitter: ugurozalp_
