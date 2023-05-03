@@ -1,6 +1,6 @@
 ## ugurozalp-com
 
-Repository of my personal blog [http://ugurozalp.com](http://ugurozalp.com)
+Repository of my personal blog [https://ugurozalp.com](https://ugurozalp.com)
 
 ---
 
